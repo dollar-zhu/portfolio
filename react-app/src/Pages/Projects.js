@@ -3,6 +3,10 @@ import "../Projects.css";
 import Image from "../Components/Image";
 import Navbar from "../Components/Navbar";
 import { color, motion, useScroll, useSpring } from "framer-motion";
+import { Routes, Route, Link } from "react-router-dom";
+import HomePage from "./HomePage";
+import AboutMe from "./AboutMe";
+import MyMusic from "./MyMusic";
 
 const Projects = () => {
   const projectList = [
@@ -61,15 +65,29 @@ const Projects = () => {
   return (
     <>
       <div className="Navbar-projects"></div>
-      <div className="title">
-        <h1 className="tag-inactive">{"<About Me/>"}</h1>
+      <nav className="title">
+        <Link to="/about-me" className="tag-inactive">
+          {"<About Me/>"}
+        </Link>
+        <Link className="tag-active">{"<Projects/>"}</Link>
+        <Link to="/my-music" className="tag-inactive">
+          {"<My Music/>"}
+        </Link>
+        {/* <h1 className="tag-inactive">{"<About Me/>"}</h1>
         <h1 className="tag-active">{"<Projects/>"}</h1>
-        <h1 className="tag-inactive">{"<My Music/>"}</h1>{" "}
-      </div>
+        <h1 className="tag-inactive">{"<My Music/>"}</h1> */}
+      </nav>
       {projectList.map((project) => (
-        <Image project={project} />
+        <Image project={project} key={project.id} />
       ))}
       <motion.div className="progress" style={{ scaleX }} />
+
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/about-me" element={<AboutMe />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/my-music" element={<MyMusic />} />
+      </Routes>
     </>
   );
 };

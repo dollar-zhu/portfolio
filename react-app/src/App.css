@@ -41,3 +41,9 @@ nav{
   font-weight: 700;
   color: #000000;
 }
+
+nav{
+    background-color: transparent;
+    z-index: 99;
+    width:20%
+  }
