@@ -4,12 +4,17 @@ import HomePage from "./Pages/HomePage";
 import Projects from "./Pages/Projects";
 import Navbar from "./Components/Navbar";
 import AboutMe from "./Pages/AboutMe";
+import PageProvider from "./Providers/PageProvider";
+import DetailPage from "./Pages/DetailPage";
 
 function App() {
   return (
-    <div className="App">
-      <AboutMe />
-    </div>
+    <PageProvider>
+      <div className="App">
+        <HomePage />
+        <DetailPage />
+      </div>
+    </PageProvider>
   );
 }
 

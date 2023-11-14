@@ -1,40 +1,93 @@
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Fredoka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 html, body, #app, #app>div {
   height: 100%
 }
 
 .Home-page{
   background-color: #FFD12D;
-  height: 100vh;
+  height: 85vh;
 }
 
 h1, h2, h3, h4 {
   font-family: 'Lalezar';
 }
 
-
-.Home-center{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+p{
+  font-family: 'Fredoka';
 }
 
+h4, p{
+  color:black;
+}
+
+
+.Home-center{
+  display: block;
+}
+
+
 .Name-header{
+  display: block;
   font-size: 5rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  color: black;
 }
 
-nav{
-  display: block;
-  justify-content: space-between;
-  align-items: center;
-  height: 60px;
-  padding: 0 50px;
-  background-color: #f2f2f2;
+.intro-text-area{
+  margin-top: 20%;
+  margin-left: 8%;
+  width: 85%;
+
+
 }
+
+.down-arrow-area{
+  margin-top: 8%;
+  display: flex;
+  justify-content: center;
+}
+
+.Name-description-line-1,.Name-description-line-2,.Name-description-line-3,.Name-description-line-4{
+  margin-top:3px;
+  margin-bottom:3px;
+  color: black;
+
+}
+
+.Name-description-line-1{
+  font-size: 4.5rem;
+}
+
+.Name-description-line-2{
+  font-size: 3rem;
+}
+
+.Name-description-line-3{
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.Name-description-line-4{
+  font-size: 1.5rem;
+}
+
+.emoji{
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+
+}
+
+.comment{
+  margin-bottom:0;
+  margin-top:0;
+  font-size: 1rem;
+}
+
 
 .navLogo{
   font-size: 2rem;
@@ -42,8 +95,131 @@ nav{
   color: #000000;
 }
 
-nav{
+
+.nav {
+    position: fixed;
     background-color: transparent;
     z-index: 99;
-    width:20%
+    width:20%;
+    text-align: left;
+    left: 5%;
+    right: 0;
+    height: 500px;
+    top: 30%;
+    color: var(--black);
+}
+
+.nav-disabled{
+  display: none;
+}
+
+.tag-active, .tag-inactive{
+    margin-top: 0;
+    margin-top: 30px;
+    text-align: left;
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: -3px;
+    line-height: 1.2;
+    text-decoration: none;
+    color: var(--black);
+    margin-bottom: 10px;
+    display: block;
+}
+
+.tag-inactive{
+    color: rgba(255, 255, 255, 0.2);
+    font-size: 36px;
+    cursor: pointer;
+}
+
+
+
+.tag-inactive:hover{
+  color: white;
+  transform: scale(1.2);
+  transform-origin: center left; /* added property */
+  transition: 0.3s;
+}
+
+@media (max-width: 1200px){
+  .tag-active, .tag-inactive{
+    font-size: 36px;
+
   }
+
+  @media (max-width: 960px) {
+    .nav {
+        top: 0;
+        display: flex;
+        gap: 20px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        background-color: #FFD12D;
+        width: 100vw;
+        z-index: 99;
+    }
+
+    .down-arrow-area{
+      margin-top: 15%;
+      display: flex;
+      justify-content: center;
+    }
+
+    .tag-active, .tag-inactive{
+        margin-top: 0;
+        margin-bottom: 5px;
+        margin-right:20px;
+        font-weight: 400;
+        text-align: left;
+        letter-spacing: normal;
+    }
+    
+    .tag-inactive{
+        font-size: 24px;
+        color:white;
+    }
+
+    .tag-active{
+        font-size: 28px;
+    }
+
+    .Name-description-line-1{
+      font-size: 3rem;
+    }
+    
+    .Name-description-line-2{
+      font-size: 2rem;
+    }
+    
+    .Name-description-line-3{
+      font-size: 1.5rem;
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: nowrap;
+    }
+    .Name-description-line-4{
+      font-size: 1.2rem;
+    }
+    
+    .emoji{
+      width: 30px;
+      height: 30px;
+    
+    }
+
+    .intro-text-area{
+      width:65%;
+      margin-left: 10%;
+    }
+    
+    .comment{
+      margin-bottom:0;
+      margin-top:0;
+      font-size: 1rem;
+    }
+  }
+}

@@ -3,27 +3,23 @@ import { Link, Routes, Route } from "react-router-dom";
 import HomePage from "./HomePage";
 import Projects from "./Projects";
 import MyMusic from "./MyMusic";
+import "../AboutMe.css";
+import Navbar from "../Components/Navbar";
+import DollarProfile from "../Images/Dollar-profile.png";
+import motion from "framer-motion";
+import AboutMeTitle from "../Components/AboutMeTitle";
+import EducationSection from "../Components/EducationSection";
+import SkillsSection from "../Components/SkillsSection";
 
 const AboutMe = () => {
   return (
     <div>
-      <nav className="title">
-        <Link to="/about-me" className="tag-inactive">
-          {"<About Me/>"}
-        </Link>
-        <Link className="tag-active" to="/projects">
-          {"<Projects/>"}
-        </Link>
-        <Link to="/my-music" className="tag-inactive">
-          {"<My Music/>"}
-        </Link>
-      </nav>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about-me" element={<AboutMe />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/my-music" element={<MyMusic />} />
-      </Routes>
+      <Navbar />
+      <div className="about-me-area">
+        <AboutMeTitle />
+        <EducationSection />
+        <SkillsSection />
+      </div>
     </div>
   );
 };

@@ -1,0 +1,131 @@
+.about-me-area{
+    margin-left: 30%;
+    margin-top: 2%;
+    width: 60%;
+}
+
+.about-me-title{
+    font-size: 3rem;
+    color: black;
+    text-align: left;
+    margin-bottom: 20px;
+    margin-top: 80px;
+}
+
+.about-me-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.dollar-zhu-img{
+    width: 150px;
+    height: 150px;
+}
+
+.about-me-header {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+}
+
+.about-me-intro-text{
+    font-size: 1.2rem;
+    color: black;
+}
+
+.education-column-layout
+{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.education-school{
+    font-size: 1.4rem;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.education-program{
+    font-size: 1rem;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 5px;
+    line-height: 1;
+}
+
+.education-description{
+    margin-top: 5px;
+}
+
+.education-description p{
+    margin-top: 0;
+}
+
+.skill-component{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-gap: 20px;
+    margin-top: 40px;
+}
+
+.circles{
+    display: flex;
+    gap: 5px;
+}
+
+.skill-subcomponent{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 960px) {
+    .about-me-header {
+        display: block;
+
+    }
+
+    .about-me-area{
+        margin:auto;
+        width: 80%;
+        align-items: center;
+    }
+
+    .education-column-layout
+{
+    display:block;
+}
+
+.skill-component{
+    display: block;
+}
+
+.skill-subcomponent{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.circles{
+    margin-bottom: 10px;
+
+}
+
+.skill-area{
+    margin:auto;
+    width:80%;
+}
+
+
+.skill-level{
+    display:flex;
+    gap:10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+}

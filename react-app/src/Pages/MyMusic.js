@@ -1,7 +1,13 @@
 import React from "react";
+import Navbar from "../Components/Navbar";
 
 const MyMusic = () => {
-  return <div>MyMusic</div>;
+  return (
+    <div>
+      <Navbar />
+      <h1>My Music</h1>
+    </div>
+  );
 };
 
 export default MyMusic;

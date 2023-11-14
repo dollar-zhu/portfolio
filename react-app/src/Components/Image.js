@@ -28,7 +28,11 @@ const Image = ({ project }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={`/${project.name}.png`} alt="Dollar Zhu's projects" />
+        <img
+          className="dollars-projects"
+          src={`/${project.name}.png`}
+          alt="Dollar Zhu's projects"
+        />
         {showDetails && (
           <div
             style={{
@@ -47,7 +51,10 @@ const Image = ({ project }) => {
           </div>
         )}
       </div>
-      <motion.h2 style={{ y }}>{`#00${project.id}`}</motion.h2>
+      <motion.h2
+        className="image-number"
+        style={{ y }}
+      >{`#00${project.id}`}</motion.h2>
     </section>
   );
 };
