@@ -1,0 +1,127 @@
+.logo{
+    margin: 0,0,20px,20px;
+}
+
+.top-nav{
+    padding-left: 5%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    
+}
+
+.nav-links{
+    color: black;
+    display:flex;
+    gap: 40px;
+}
+
+.ind-project-page{
+    padding-top:80px;
+    background-color: white;
+}
+
+.ind-project-area{
+    width: 80%;
+    margin:auto;
+}
+
+.header-image {
+    margin-top: 30px;
+    position: relative;
+    text-align: center;
+}
+
+.header-image img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+
+.project-image-title{
+    position: absolute;
+    text-wrap: nowrap;
+    font-size: 5rem;
+    top: 30%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.project-button{
+    position: absolute;
+    top: 60%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+.quote-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 20px 20px 50px 20px;
+
+}
+
+.quote-text{
+    color:black;
+    font-size: 2.5rem;
+    font-weight: 400;
+}
+
+.quote-description-area{
+
+}
+
+.left-text-panel{
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+    margin: 20px 20px 50px 20px;
+}
+
+.left-text-panel-image{
+    width:300px;
+    object-fit: cover;
+}
+
+.left-text-panel-caption{
+    color:gray;
+    width:300px;
+}
+
+.section-title{
+    font-size: 2rem;
+    font-weight: 400;
+    color: #FFD12D;
+    margin-bottom: 2px;
+}
+
+.section-text{
+    font-size:1.2rem;
+}
+
+.section-image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+}
+
+
+
+@media (max-width: 960px) {
+    .project-image-title{
+        font-size: 3rem;
+    }
+
+    .quote-section{
+        display: block;
+    }
+
+    .left-text-panel{
+        display: block;
+    }
+}

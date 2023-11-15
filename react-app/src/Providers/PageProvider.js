@@ -9,6 +9,7 @@ const PageProvider = ({ children }) => {
     setPage(newPage);
     if (newPage === "projects") window.scrollTo(0, 1000);
     else if (newPage === "about me") window.scrollTo(0, 820);
+    else window.scrollTo(0, 0);
   };
 
   return (

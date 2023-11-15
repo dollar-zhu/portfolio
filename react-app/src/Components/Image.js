@@ -2,6 +2,7 @@ import React from "react";
 import { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useState } from "react";
+import { usePageUpdate } from "../Providers/PageProvider";
 
 const useParallax = (value, distance) => {
   return useTransform(value, [0, 1], [-distance, distance]);
@@ -9,6 +10,7 @@ const useParallax = (value, distance) => {
 
 const Image = ({ project }) => {
   const ref = useRef(null);
+  const updatePage = usePageUpdate();
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);
   const [showDetails, setShowDetails] = useState(false);
@@ -27,6 +29,9 @@ const Image = ({ project }) => {
         ref={ref}
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
+        onClick={() => {
+          updatePage(project.name);
+        }}
       >
         <img
           className="dollars-projects"

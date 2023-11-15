@@ -42,7 +42,7 @@ const HomePage = () => {
           </h2>
 
           <h2 className="Name-description-line-4">
-            {` with an unrelenting focus on product strategy (Yes, I was a management consultant for a while)`}
+            {` with an unrelenting focus on product strategy (Yes, being a management consultant for a while helped)`}
           </h2>
 
           <div className="Name-description-line-3">
