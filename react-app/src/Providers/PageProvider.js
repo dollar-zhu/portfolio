@@ -4,7 +4,7 @@ const pageContext = React.createContext();
 const pageUpdateContext = React.createContext();
 
 const PageProvider = ({ children }) => {
-  const [page, setPage] = React.useState("projects");
+  const [page, setPage] = React.useState("about me");
   const updatePage = (newPage) => {
     setPage(newPage);
     if (newPage === "projects") window.scrollTo(0, 1000);
