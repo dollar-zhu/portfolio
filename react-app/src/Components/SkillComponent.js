@@ -34,7 +34,7 @@ const SkillComponent = () => {
         />
         <SkillLevel
           skillName="Powerpoint"
-          skillNum={5}
+          skillNum={4}
           skillDescription={`Slide-making is an essential skill for every management consultant. I learned it during my time at Topline Strategy and became effective at creating impactful presentations.`}
         />
       </div>

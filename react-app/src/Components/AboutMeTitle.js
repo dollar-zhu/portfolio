@@ -30,7 +30,7 @@ const AboutMeTitle = () => {
         undergraduate degrees in Media Studies and French, with minors in
         Economics and Math. I have worked on projects in software
         engineering, game design, academic research, and business. These
-        experiences taught me how to think, design, and execute when
+        experiences taught me how to ideate, design, and execute when
         presented with complex challenges.`}
       </p>
     </div>
