@@ -29,7 +29,7 @@ const SkillComponent = () => {
       <div className="skill-area">
         <SkillLevel
           skillName="Figma"
-          skillNum={5}
+          skillNum={3}
           skillDescription={`Before I dive into coding, I always prototype with Figma. I learned it from my UI/UX internship and have used it for every project I built since.`}
         />
         <SkillLevel

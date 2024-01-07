@@ -19,11 +19,33 @@
 .ind-project-page{
     padding-top:80px;
     background-color: white;
+    padding-bottom: 10%;
 }
 
 .ind-project-area{
     width: 80%;
     margin:auto;
+    display:flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.project-section{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:30px;
+
+}
+
+.ind-project-description-area{
+    width: 80%;
+    margin:auto;
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 120px;
 }
 
 .header-image {
@@ -53,6 +75,46 @@
     top: 60%;
     left:50%;
     transform: translate(-50%,-50%);
+    overflow: hidden;
+  border: 2px solid var(--white);
+  color: var(--white);
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 12px 18px 8px 18px;
+  margin: 2rem 0rem 0rem 0rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.project-button:hover{
+    border: 2px solid var(--yellow);
+    color: var(--white);
+    background: var(--yellow);
+    transition: all 0.3s ease-in-out;
+}
+
+.play-button{
+   
+    overflow: hidden;
+  border: 2px solid var(--black);
+  color: var(--black);
+  background-color: transparent;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 30px;
+  padding: 12px 18px 8px 18px;
+  margin: 2rem 0rem 0rem 0rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.play-button:hover{
+    border: 2px solid var(--yellow);
+    color: var(--white);
+    background: var(--yellow);
+    transition: all 0.3s ease-in-out;
 }
 
 .quote-section{
@@ -69,9 +131,6 @@
     font-weight: 400;
 }
 
-.quote-description-area{
-
-}
 
 .left-text-panel{
     display: grid;
@@ -112,6 +171,105 @@
 
 
 
+.grid-1-2{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 50px;
+}
+
+.grid-1x2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+
+}
+
+.grid-1x3{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+}
+
+.grid-1x3-unresponsive{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    width:100%;
+}
+
+.grid-1-3{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+
+.body-flex{
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+}
+
+.body-flex-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:5px;
+}
+
+.body-flex-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:20px;
+}
+
+.logo-img{
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.text-center{
+    text-align: center;
+}
+
+.info-p{
+    max-width: 200px;
+}
+
+.bold-center{
+    font-weight: 900;
+    text-align: center;
+}
+
+.flex-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+
+.caption{
+    color: gray;
+    font-size: 0.7rem;
+    margin-left: 10%;
+    width: 80%;
+    text-align: center;
+
+}
+
+
+
 @media (max-width: 960px) {
     .project-image-title{
         font-size: 3rem;
@@ -124,4 +282,72 @@
     .left-text-panel{
         display: block;
     }
+
+
+}
+
+@media (max-width: 768px) {
+.ind-project-area{
+    width: 100%;
+    margin:auto;
+}
+
+.ind-project-description-area{
+    width: 80%;
+    margin:auto;
+}
+
+.grid-1-2{
+    display: flex;
+    margin: 20px 20px 50px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-1x2{
+    display: flex;
+    margin: 20px 20px 50px 20px;
+    flex-direction: column;
+    align-items: flex-start;
+
+
+}
+
+.grid-1x3{
+    display: flex;
+    margin: 20px 20px 50px 20px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.grid-1x3-unresponsive{
+    grid-template-columns: 5fr 1fr 5fr;
+
+}
+
+p .text-center{
+    font-size: 0.8rem;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+
+}
+
+
+
+/* .project-image{
+    width:150px;
+} */
+
+/* .grid-1-3{
+    display: flex;
+    margin: 20px 20px 50px 20px;
+    flex-direction: column;
+    align-items: center;
+} */
+
+
 }

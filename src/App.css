@@ -18,8 +18,16 @@ p{
   font-family: 'Fredoka';
 }
 
-h4, p{
+
+
+h3,h4,p{
+  margin:0;
   color:black;
+}
+
+h3{
+  font-size: 1.5rem;
+
 }
 
 
@@ -148,78 +156,79 @@ h4, p{
 
   }
 
-  @media (max-width: 960px) {
-    .nav {
-        top: 0;
-        display: flex;
-        gap: 20px;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        background-color: #FFD12D;
-        width: 100vw;
-        z-index: 99;
-    }
+}
 
-    .down-arrow-area{
-      margin-top: 15%;
+@media (max-width: 960px) {
+  .nav {
+      top: 0;
       display: flex;
+      gap: 20px;
+      flex-direction: row;
       justify-content: center;
-    }
-
-    .tag-active, .tag-inactive{
-        margin-top: 0;
-        margin-bottom: 5px;
-        margin-right:20px;
-        font-weight: 400;
-        text-align: left;
-        letter-spacing: normal;
-    }
-    
-    .tag-inactive{
-        font-size: 24px;
-        color:white;
-    }
-
-    .tag-active{
-        font-size: 28px;
-    }
-
-    .Name-description-line-1{
-      font-size: 3rem;
-    }
-    
-    .Name-description-line-2{
-      font-size: 2rem;
-    }
-    
-    .Name-description-line-3{
-      font-size: 1.5rem;
-      display: flex;
       align-items: center;
-      gap: 30px;
-      flex-wrap: nowrap;
-    }
-    .Name-description-line-4{
-      font-size: 1.2rem;
-    }
-    
-    .emoji{
-      width: 30px;
-      height: 30px;
-    
-    }
+      height: 100px;
+      background-color: #FFD12D;
+      width: 100vw;
+      z-index: 99;
+  }
 
-    .intro-text-area{
-      width:65%;
-      margin-left: 10%;
-    }
-    
-    .comment{
-      margin-bottom:0;
-      margin-top:0;
-      font-size: 1rem;
-    }
+  .down-arrow-area{
+    margin-top: 15%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tag-active, .tag-inactive{
+      margin-top: 0;
+      margin-bottom: 5px;
+      margin-right:20px;
+      font-weight: 400;
+      text-align: left;
+      letter-spacing: normal;
+  }
+  
+  .tag-inactive{
+      font-size: 24px;
+      color:white;
+  }
+
+  .tag-active{
+      font-size: 28px;
+  }
+
+  .Name-description-line-1{
+    font-size: 3rem;
+  }
+  
+  .Name-description-line-2{
+    font-size: 2rem;
+  }
+  
+  .Name-description-line-3{
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: nowrap;
+  }
+  .Name-description-line-4{
+    font-size: 1.2rem;
+  }
+  
+  .emoji{
+    width: 30px;
+    height: 30px;
+  
+  }
+
+  .intro-text-area{
+    width:65%;
+    margin-left: 10%;
+  }
+  
+  .comment{
+    margin-bottom:0;
+    margin-top:0;
+    font-size: 1rem;
   }
 }

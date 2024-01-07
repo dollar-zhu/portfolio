@@ -14,6 +14,7 @@ const Image = ({ project }) => {
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);
   const [showDetails, setShowDetails] = useState(false);
+  const viewportHeight = window.innerHeight;
 
   const handleMouseEnter = () => {
     setShowDetails(true);
@@ -31,7 +32,9 @@ const Image = ({ project }) => {
         onMouseLeave={handleMouseLeave}
         onClick={() => {
           updatePage(project.name);
+          window.scrollTo(0, 1.2 * viewportHeight);
         }}
+        style={{ cursor: "pointer" }}
       >
         <img
           className="dollars-projects"
