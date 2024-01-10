@@ -26,17 +26,16 @@ const HomePage = () => {
       <div className="Home-center">
         <motion.div
           className="intro-text-area"
-          drag
-          dragConstraints={{
-            top: -50,
-            left: -50,
-            right: 50,
-            bottom: 50,
-          }}
+          // drag
+          // dragConstraints={{
+          //   top: -50,
+          //   left: -50,
+          //   right: 50,
+          //   bottom: 50,
+          // }}
         >
-          <h2 className="Name-description-line-1">
-            {greeting} I'm Dollar Zhu.
-          </h2>
+          <h2 className="Name-description-line-1">{greeting}</h2>
+          <h2 className="Name-description-line-1">I'm Dollar Zhu.</h2>
           <h2 className="Name-description-line-2">
             I am a Frontend Developer, Product Designer, Entrepreneur
           </h2>

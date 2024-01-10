@@ -20,6 +20,7 @@ import Testing from "../Images/Testing.png";
 import skillTree from "../Images/skill-tree.png";
 import unityScreenshot from "../Images/unity-screenshot.png";
 import vassarLibraryIllustration from "../Images/vassar-library-illustration.png";
+import DesignDirectionHeader from "../Components/DesignDirectionHeader";
 
 const TheVassarLife = () => {
   const designElements = [
@@ -56,7 +57,7 @@ const TheVassarLife = () => {
         <HeaderImage
           image={TheVassarLifeImg}
           project="The Vassar Life"
-          link="https://www.vassar.edu"
+          link="https://simmer.io/@DollarZhu/the-vassar-life"
         />
 
         <div className="ind-project-description-area">
@@ -153,11 +154,11 @@ const TheVassarLife = () => {
           {/* Design Elements*/}
           <div className="project-section">
             <h3>Design Elements</h3>
-            <div className="grid-1x3-unresponsive">
-              <h4 className="text-center">Core Vassar Values</h4>
-              <h4> </h4>
-              <h4 className="text-center">Design Choices</h4>
-            </div>
+
+            <DesignDirectionHeader
+              header1="Core Vassar Values"
+              header2="Design Choices"
+            />
             <DesignDirection element={designElements[0]} />
             <DesignDirection element={designElements[1]} />
             <DesignDirection element={designElements[2]} />

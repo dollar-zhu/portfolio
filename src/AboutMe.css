@@ -2,6 +2,7 @@
     margin-left: 30%;
     margin-top: 2%;
     width: 60%;
+    padding-bottom: 20%;
 }
 
 .about-me-title{
@@ -16,6 +17,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 30px;
     
 }
 
@@ -128,4 +130,22 @@
     margin-top: 20px;
 }
 
+}
+
+@media (max-width: 768px) {
+    .circles{
+        gap: 3px;
+    }
+    .circles img{
+        width:15px;
+    }
+
+    .skill-area{
+        margin-left:0;
+    }
+
+    
+    .skill-component .education-school{
+        margin-top:35px;
+    }
 }

@@ -5,9 +5,9 @@ const HeaderImage = ({ image, project, link }) => {
     <div className="header-image">
       <img src={image} alt={project} />
       <h1 className="project-image-title">{project}</h1>
-      <button className="project-button" href={link}>
+      <a className="project-button" href={link} target="_blank">
         View Project
-      </button>
+      </a>
     </div>
   );
 };

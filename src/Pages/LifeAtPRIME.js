@@ -24,25 +24,8 @@ import allocation from "../Images/LifeAtPRIME/Allocation.png";
 import guide from "../Images/LifeAtPRIME/Guide.png";
 import vassarIllustration from "../Images/LifeAtPRIME/Vassar Illustration.png";
 import primeStartup from "../Images/LifeAtPRIME/PRIME Startup SS.png";
-
-import TheVassarLifeImg from "../Images/The Vassar Life.png";
-import appLogo from "../Images/The Vassar Life Logo.png";
-import controller from "../Images/controller.svg";
-import cardsPlaying from "../Images/cards-playing.svg";
-import unity from "../Images/unity.svg";
-import commentQuoteOutline from "../Images/comment-quote-outline.svg";
-import compassOutline from "../Images/compass-outline.svg";
-import Academics from "../Images/Academics.svg";
-import bridge from "../Images/bridge.svg";
 import DesignDirection from "../Components/DesignDirection";
-import ScoreSystem from "../Images/score-system.png";
-import Kumar from "../Images/Kumar.png";
-import Library from "../Images/Library.png";
-import Prototype from "../Images/Prototype.png";
-import Testing from "../Images/Testing.png";
-import skillTree from "../Images/skill-tree.png";
-import unityScreenshot from "../Images/unity-screenshot.png";
-import vassarLibraryIllustration from "../Images/vassar-library-illustration.png";
+import DesignDirectionHeader from "../Components/DesignDirectionHeader";
 
 const LifeAtPRIME = () => {
   const designElements = [
@@ -119,7 +102,7 @@ const LifeAtPRIME = () => {
             <h3>Project Summary</h3>
             <div className="grid-1x3">
               <div className="body-flex-center">
-                <h4 style={{ textAlign: "center", height: "100px" }}>
+                <h4 style={{ textAlign: "center", height: "60px" }}>
                   Rethinking Master’s Admission
                 </h4>
                 <img src={pencilRuler} alt="pencil Ruler" />
@@ -130,7 +113,7 @@ const LifeAtPRIME = () => {
                 </p>
               </div>
               <div className="body-flex-center">
-                <h4 style={{ textAlign: "center", height: "100px" }}>
+                <h4 style={{ textAlign: "center", height: "60px" }}>
                   Iterate, Iterate, Iterate Again
                 </h4>
                 <img src={iterate} alt="iterate" />
@@ -141,7 +124,7 @@ const LifeAtPRIME = () => {
                 </p>
               </div>
               <div className="body-flex-center">
-                <h4 style={{ textAlign: "center", height: "100px" }}>
+                <h4 style={{ textAlign: "center", height: "60px" }}>
                   Evolve Through Technology
                 </h4>
                 <img src={magic} alt="magic" />
@@ -261,7 +244,7 @@ const LifeAtPRIME = () => {
             <h3>Testing and Iteration</h3>
 
             <div className="flex-row">
-              <div className="body-flex-middle">
+              <div className="body-flex-middle" style={{ marginLeft: "10%" }}>
                 <h4>Life @ PRIME Version 1.0</h4>
                 <p style={{ maxWidth: "80%" }}>
                   After understanding the unmet needs and the features to
@@ -353,11 +336,10 @@ const LifeAtPRIME = () => {
           {/* Design Elements*/}
           <div className="project-section">
             <h3>Turning Feedback into Design</h3>
-            <div className="grid-1x3-unresponsive">
-              <h4 className="text-center">Feedbacks</h4>
-              <h4> </h4>
-              <h4 className="text-center">New Design Choices</h4>
-            </div>
+            <DesignDirectionHeader
+              header1="Feedbacks"
+              header2="New Design Choices"
+            />
             <DesignDirection element={designElements[0]} />
             <DesignDirection element={designElements[1]} />
             <DesignDirection element={designElements[2]} />

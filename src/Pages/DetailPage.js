@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import { usePage, usePageUpdate } from "../Providers/PageProvider";
 import TheVassarLife from "./TheVassarLife";
 import LifeAtPRIME from "./LifeAtPRIME";
+import RecycleIt from "./RecycleIt";
 
 const DetailPage = () => {
   //could either be projects, about me, or ind. project page
@@ -17,6 +18,8 @@ const DetailPage = () => {
     currPage = <TheVassarLife />;
   } else if (page === "Life @ PRIME") {
     currPage = <LifeAtPRIME />;
+  } else if (page === `Recycle It!`) {
+    currPage = <RecycleIt />;
   }
   return <div>{currPage}</div>;
 };
