@@ -60,8 +60,18 @@ const Navbar = () => {
             {"<Projects/>"}
           </h1>
         )}
-
-        <h1 className="tag-inactive">{"<My Music/>"}</h1>
+        {currPage === "music" ? (
+          <h1 className="tag-active">{"<My Music/>"}</h1>
+        ) : (
+          <h1
+            onClick={() => {
+              updatePage("music");
+            }}
+            className="tag-inactive"
+          >
+            {"<My Music/>"}
+          </h1>
+        )}
       </div>
       {/* <Routes>
           <Route path="/home" element={<HomePage />} />

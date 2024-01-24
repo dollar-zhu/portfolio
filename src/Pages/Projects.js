@@ -39,20 +39,20 @@ const Projects = () => {
       description:
         "A web platform that runs fun, group-based cognitive experiments",
     },
-    {
-      id: 5,
-      name: "Lilly Family",
-      role: "UI/UX Intern - Pure UX",
-      description:
-        "An app facilitating the communication between caregivers and doctors.",
-    },
-    {
-      id: 6,
-      name: "Topline Strategy",
-      role: "Associate Consultant",
-      description:
-        "A boutique consulting firm that helps B2B technology companies grow.",
-    },
+    // {
+    //   id: 5,
+    //   name: "Lilly Family",
+    //   role: "UI/UX Intern - Pure UX",
+    //   description:
+    //     "An app facilitating the communication between caregivers and doctors.",
+    // },
+    // {
+    //   id: 6,
+    //   name: "Topline Strategy",
+    //   role: "Associate Consultant",
+    //   description:
+    //     "A boutique consulting firm that helps B2B technology companies grow.",
+    // },
   ];
 
   const { scrollYProgress } = useScroll();
