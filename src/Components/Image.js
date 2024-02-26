@@ -13,7 +13,7 @@ const Image = ({ project }) => {
   const updatePage = usePageUpdate();
   const { scrollYProgress } = useScroll({ target: ref });
   const y = useParallax(scrollYProgress, 300);
-  const [showDetails, setShowDetails] = useState(false);
+  const [showDetails, setShowDetails] = useState(true);
   const viewportHeight = window.innerHeight;
 
   const handleMouseEnter = () => {
@@ -21,7 +21,7 @@ const Image = ({ project }) => {
   };
 
   const handleMouseLeave = () => {
-    setShowDetails(false);
+    setShowDetails(true);
   };
 
   return (

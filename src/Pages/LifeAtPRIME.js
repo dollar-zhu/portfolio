@@ -62,7 +62,7 @@ const LifeAtPRIME = () => {
         <HeaderImage
           image={brownBG}
           project="Life @ PRIME"
-          link="life-at-prime.web.app"
+          link="https://life-at-prime.web.app"
         />
 
         <div className="ind-project-description-area">

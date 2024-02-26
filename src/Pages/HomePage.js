@@ -37,7 +37,7 @@ const HomePage = () => {
           <h2 className="Name-description-line-1">{greeting}</h2>
           <h2 className="Name-description-line-1">I'm Dollar Zhu.</h2>
           <h2 className="Name-description-line-2">
-            I am a Frontend Developer, Product Designer, Entrepreneur
+            I am a Product Designer, Frontend Developer, and Entrepreneur
           </h2>
 
           <h2 className="Name-description-line-4">

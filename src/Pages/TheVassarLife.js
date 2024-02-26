@@ -312,7 +312,14 @@ const TheVassarLife = () => {
                   in 2020 and 2021. The game received so much attention from the
                   college that the president of Vassar came to play with us on
                   our launch day, and we even got an article about us in
-                  Vassar’s student-run newspaper. Read the article here
+                  Vassar’s student-run newspaper. Read the article{" "}
+                  <a
+                    className="link"
+                    href="https://miscellanynews.org/2020/05/28/features/from-board-game-to-digital-team-inks-creates-the-vassar-life/"
+                    target="blank"
+                  >
+                    here
+                  </a>
                 </p>
                 <h4 style={{ marginTop: "30px" }}>Takeaways</h4>
                 <p>
