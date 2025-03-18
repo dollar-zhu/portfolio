@@ -19,7 +19,7 @@ const HomePage = () => {
       setGreeting(greetingsLibrary[randomIndex]);
     }, 3000);
     return () => clearInterval(intervalId);
-  }, []);
+  });
 
   return (
     <div className="Home-page">
@@ -37,11 +37,11 @@ const HomePage = () => {
           <h2 className="Name-description-line-1">{greeting}</h2>
           <h2 className="Name-description-line-1">I'm Dollar Zhu.</h2>
           <h2 className="Name-description-line-2">
-            I am a Product Designer, Frontend Developer, and Entrepreneur
+            A Builder with a heart for humanity
           </h2>
 
           <h2 className="Name-description-line-4">
-            {` with an unrelenting focus on product strategy (Yes, being a management consultant for a while helped)`}
+            {` I like anything from In & Out to Rachmaninoff.`}
           </h2>
 
           <div className="Name-description-line-3">
